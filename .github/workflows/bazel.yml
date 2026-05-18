@@ -21,6 +21,7 @@ jobs:
         run: bazel version
 
       - name: Build
-        run: |
-          cd java-tutorial
-          bazel build //src/main/java/com/example/cmdline:runner
+        run: bazel build //go/tools/bazel...
+
+      - name: Test
+        run: bazel test //go/tools/bazel...
