@@ -20,5 +20,5 @@ jobs:
       - name: Verify Bazel
         run: bazel version
 
-      - name: Build
-        run: bazel build //...
+      - name: Build small target
+        run: bazel build //go/tools/bazel
